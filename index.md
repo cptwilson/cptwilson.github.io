@@ -1,4 +1,4 @@
 # Zachary Wilson
 
 ## Apartment
-[viewHome](viewHome.html)
+[Apartment 3D Model](viewHome.html)
