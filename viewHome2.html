@@ -20,7 +20,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>View home with Sweet Home 3D HTML5 Viewer</title>
+<title>sh3d html5 viewer</title>
 
 <!--  Copy the following scripts in your page header -->
 <script type="text/javascript" src="lib/big.min.js"></script>
@@ -36,8 +36,25 @@
 <script type="text/javascript" src="lib/viewhome.min.js"></script>
 
 <style type="text/css">
-/* The class of components handled by the viewer */
+/* WILSON: WIP: remove inline style tags, replace with responsive shit */
+
 .viewerComponent  {
+}
+body {
+  font-size: 9pt;
+}
+
+.options {
+  margin-top: -64px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#viewercanvas {
+  width: 80%;
+  height 45%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 </style>
 </head>
@@ -45,20 +62,20 @@
 <body>
 <div>
   <!-- Copy the following canvas and components in your page, changing their size / texts and other values if needed  -->
-  <canvas id="viewerCanvas" class="viewerComponent" width="848" height="480"
+  <canvas id="viewerCanvas" class="viewerComponent"
           style="background-color: #CCCCCC; border: 1px solid gray; outline:none" tabIndex="1"></canvas>
   <div id="viewerProgressDiv" style="width: 400px; position: relative; top: -350px; left: 200px; background-color: rgba(128, 128, 128, 0.7); padding: 20px; border-radius: 25px">
     <progress id="viewerProgress"  class="viewerComponent" value="0" max="200" style="width: 400px"></progress>
     <label id="viewerProgressLabel" class="viewerComponent" style="margin-top: 2px; display: block; margin-left: 10px"></label>
   </div>
-  <div style="margin-top: -60px">
+  <div class="options">
     <input  id="aerialView"   class="viewerComponent" name="cameraType" type="radio" style="visibility: hidden;"/>
       <label class="viewerComponent" for="aerialView" style="visibility: hidden;">Aerial view</label>
     <input  id="virtualVisit" class="viewerComponent" name="cameraType" type="radio" style="visibility: hidden;"/>
       <label class="viewerComponent" for="virtualVisit" style="visibility: hidden;">First-person view</label>
     <select id="levelsAndCameras" class="viewerComponent" style="visibility: hidden;"></select>
     <br>
-    <p>Click and drag and scroll in the viewing window to control the camera. You can also use arrow keys to move. Sometimes. Or WASD. Sometimes. Yeah responsive inputs for a canvas window in javascript takes work. sorry.</p>
+    <p>Click and drag and scroll in the viewing window to control the camera. You can also use arrow keys to move. Sometimes. Or WASD. Sometimes. Yeah responsive inputs for a canvas window in javascript takes work. sorry. On touchscreens, pinching in/out works to zoom/move, too, apparently.</p>
   </div>
 </div>
 <a href="https://cptwilson.github.io/">⬅️ Back</a>
