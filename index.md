@@ -1,4 +1,2 @@
-# Zachary Wilson
-
 ## Apartment
-[Apartment 3D Model](viewHome.html)
+[Apartment 3D Model](viewHome2.html)
